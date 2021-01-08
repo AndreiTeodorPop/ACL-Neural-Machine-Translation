@@ -1,2 +1,3 @@
 # ACL-Neural-Machine-Translation
-English to Russian model
+
+Aplication build for grading
