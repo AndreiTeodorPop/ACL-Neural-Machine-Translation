@@ -84,6 +84,11 @@ public class TranslationFrame {
         }
     }
 
+    /**
+     * Create a new translation model using user input data
+     * @throws FileNotFoundException
+     */
+
     public static void createCustomModel() throws FileNotFoundException {
         IamAuthenticator authenticator = new IamAuthenticator(API_KEY);
         LanguageTranslator languageTranslator = new LanguageTranslator(VERSION, authenticator);
