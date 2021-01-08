@@ -1,0 +1,10 @@
+https://cloud.ibm.com/docs/language-translator?topic=language-translator-document-translator-tutorial
+
+curl -X POST --user "apikey:gICZUevuLgyWL9zBpm-QfqM-kfLN8wwcB7W_30E5IDla" --form "file=@C:\Users\a magic potato\Desktop\Java Apps\LanguageTranslator\src\main\java\com\ibm\watson\language_translator\v3\documents\rus.txt" --form "source=ru" --form "target=en" "https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/ca1326e0-0e7b-439d-b198-551fc6302dab/v3/documents?version=2018-05-01"
+
+curl -X GET --user "apikey:gICZUevuLgyWL9zBpm-QfqM-kfLN8wwcB7W_30E5IDla" "https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/ca1326e0-0e7b-439d-b198-551fc6302dab/v3/documents/24f2924b-99bf-4769-9243-e196cc1e0453?version=2018-05-01"
+
+curl -X GET --user "apikey:gICZUevuLgyWL9zBpm-QfqM-kfLN8wwcB7W_30E5IDla" --output "rus-ibm.txt" "https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/ca1326e0-0e7b-439d-b198-551fc6302dab/v3/documents/3044e942-09b6-4eda-9972-222b2acedcb4/translated_document?version=2018-05-01"
+
+curl --user apikey:gICZUevuLgyWL9zBpm-QfqM-kfLN8wwcB7W_30E5IDla --request POST --form parallel_corpus=@rus-eng.tmx "https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/ca1326e0-0e7b-439d-b198-551fc6302dab/v3/models?version=2018-05-01&base_model_id=ru-en&name=custom-ru-en"
+
